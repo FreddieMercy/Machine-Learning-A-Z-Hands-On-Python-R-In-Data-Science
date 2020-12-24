@@ -90,3 +90,14 @@ repeat5times3
 library(rio)
 
 data <- import("data/Data.csv")
+
+View(data)
+
+readTable <- read.table("data/Data.csv") # more alike "read .(as) table/csv/..." 
+readTable
+
+selectCarsByCol <- mtcars[, c(1:4, 6:7, 9:11)] 
+selectCarsByCol
+
+selectCarsByAttr <- mtcars$mpg[mtcars$gear == 3]
+selectCarsByAttr
