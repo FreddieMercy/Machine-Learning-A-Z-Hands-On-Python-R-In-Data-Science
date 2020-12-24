@@ -71,3 +71,22 @@ DataFrame
 
 list1 <- list(vector, matrix1, arr) # any length, any data-type
 list1
+
+#sequence <- seq(1,30, by = -3)
+sequence <- seq(1,30, by = 3)
+sequence
+
+readFromConsole <- scan()
+
+repeat5times <- rep(c(T, F), 5)
+repeat5times
+
+repeat5times2 <- rep(c(T, F), each = 5)
+repeat5times2
+
+repeat5times3 <- rep(T, 5)
+repeat5times3
+
+library(rio)
+
+data <- import("data/Data.csv")
