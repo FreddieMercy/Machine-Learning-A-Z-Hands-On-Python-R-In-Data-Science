@@ -21,7 +21,7 @@ test_set = subset(dataset, split == FALSE)
 # test_set = scale(test_set)
 
 # Fitting Multiple Linear Regression to the Training set
-regressor = lm(formula = Profit ~ .,
+regressor = lm(formula = Profit ~ ., # Profit ~ R.D.Spend + Administration + Marketing.Spend + State
                data = training_set)
 
 # Predicting the Test set results
